@@ -8,7 +8,7 @@ export default function Tabs(props) {
         inactiveTabIcon : 'text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300'
       }
     return (
-        <div className="flex justify-center border-b border-gray-200 dark:border-gray-700">
+        <div data-testid="tabs" className="flex justify-center border-b border-gray-200 dark:border-gray-700">
             <ul className="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400">
                 <li className="mr-2">
                     <a className={`tap-highlight-none inline-flex p-4 rounded-t-lg border-b-2 ${props.currentTab === 1 ? classOptions.activeTabGroup : classOptions.inactiveTabGroup}`}
