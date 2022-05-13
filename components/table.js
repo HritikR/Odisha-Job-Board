@@ -1,5 +1,6 @@
 import useSWR from 'swr'
 import Loader from './loader'
+
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
 export default function Table(props) {
     let noticeList = {}

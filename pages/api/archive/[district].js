@@ -1,7 +1,6 @@
 import { archiveLinks } from '../../../lib/districtPortals'
 import { retriveNotices, parameterHandler } from "../latest/[district]";
 
-
 export default async function handler(req, res) {
     const { district } = req.query
     const currentDistrict = parameterHandler(district)

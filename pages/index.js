@@ -4,6 +4,7 @@ import Header from '../components/header'
 import Tabs from '../components/tabs'
 import Pages from '../components/pages'
 import Footer from '../components/Footer'
+
 export default function Home() {
   const [currentTab, setCurrentTab] = useState(1); 
   return (

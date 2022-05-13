@@ -1,6 +1,7 @@
 import React from 'react'
 import { districtPortals } from '../lib/districtportals'
 import Table from './table'
+
 export default function Pages(props) {
     return (
         <>
