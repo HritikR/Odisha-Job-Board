@@ -1,11 +1,11 @@
-import { districtPortals } from '../../../lib/districtPortals'
+import { archiveLinks } from '../../../lib/districtPortals'
 import { retriveNotices, parameterHandler } from "../latest/[district]";
 
 
 export default async function handler(req, res) {
     const { district } = req.query
     const currentDistrict = parameterHandler(district)
-    let districtUrl = districtPortals[currentDistrict].replace('notice_category', 'past-notices')
+    let districtUrl = archiveLinks()[currentDistrict]
     let data = await retriveNotices(districtUrl)
     let result = {}
     if (data.length != 0) {

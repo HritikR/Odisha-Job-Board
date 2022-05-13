@@ -1,6 +1,6 @@
 import axios from 'axios'
 import cheerio from 'cheerio'
-import { districtPortals } from '../../../lib/districtPortals'
+import { latestLinks } from '../../../lib/districtPortals'
 
 /**
  * parameter Handler
@@ -14,7 +14,7 @@ const parameterHandler = (string) => {
 export default async function handler(req, res) {
   const { district } = req.query
   const currentDistrict = parameterHandler(district)
-  let districtUrl = districtPortals[currentDistrict]
+  let districtUrl = latestLinks()[currentDistrict]
   let data = await retriveNotices(districtUrl)
   let result = {}
   if (Object.keys(data).length != 0) {
