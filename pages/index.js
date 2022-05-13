@@ -16,6 +16,7 @@ export default function Home() {
       <Header/>
       <section className="flex flex-col antialiased bg-gray-100 text-gray-600 min-h-screen p-4 touch-auto dark:bg-gray-700">
         <Tabs currentTab={currentTab} setCurrentTab={setCurrentTab}/>
+        <Pages currentTab={currentTab}/>
       </section>
       <Footer/>
     </>
