@@ -5,7 +5,7 @@
 </div>
 <div align="center">
    <h3>Odisha Job Board</h3>
-   Job notification website which showcase all recruitment information from different district of Odisha.
+   Jobsfeed website that displays all recruitment information from various districts in Odisha.
 </div>
 <br>
 <div align="center">
