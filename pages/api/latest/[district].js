@@ -4,6 +4,7 @@ import { latestLinks } from '../../../lib/districtPortals'
 
 /**
  * parameter Handler
+ * Author: Hritik R
  * @param {*} string 
  * @returns Converted string into String [Wordcase]
  */
@@ -25,6 +26,13 @@ export default async function handler(req, res) {
   res.status(200).json(result)
 }
 
+
+/**
+ * retrieve notices
+ * Author: Hritik R
+ * @param {*} url 
+ * @returns object containing list of notices
+ */
 const retriveNotices = async (url) => {
   const { data } = await axios.get(url)
   const $ = cheerio.load(data)
