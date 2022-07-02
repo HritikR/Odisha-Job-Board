@@ -1,6 +1,6 @@
 import axios from 'axios'
 import cheerio from 'cheerio'
-import { latestLinks } from '../../../lib/districtPortals'
+import { latestLinks } from '../../../lib/districtportals'
 
 /**
  * parameter Handler

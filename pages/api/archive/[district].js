@@ -1,4 +1,4 @@
-import { archiveLinks } from '../../../lib/districtPortals'
+import { archiveLinks } from '../../../lib/districtportals'
 import { retriveNotices, parameterHandler } from "../latest/[district]";
 
 export default async function handler(req, res) {
